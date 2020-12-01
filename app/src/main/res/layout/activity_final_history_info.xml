@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_wallpaper"
+    tools:context=".FinalHistoryInfo">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#CCFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHistoryDetailsTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvHistoryDetailsTitle" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHistoryDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="History Details"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:stretchColumns="2">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Cart ID"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartID"
+                android:text="Cart ID "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Address"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:lines="3"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartAddress"
+                android:layout_width="0dp"
+                android:text="Address "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Item ID"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartItemID"
+                android:text="Item ID "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Item Name"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartItemName"
+                android:text="Item Name "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Description"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:lines="2"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartDescription"
+                android:layout_width="0dp"
+                android:text="Description "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:lines="2"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Item Price"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartItemPrice"
+                android:text="Item Price "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Total Item"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartTotalItem"
+                android:text="Total Item "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Total Price"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartTotalPrice"
+                android:text="Total Price "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Payment Date"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartPaymentDate"
+                android:text="Payment Date"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Payment Time "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartPaymentTime"
+                android:text="Payment Time"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Status"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvCartStatus"
+                android:text="Status "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/rectangle_border"
+                android:padding="3dip" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CCFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReceive"
+        app:layout_constraintTop_toTopOf="@+id/btnReceive" />
+
+    <TextView
+        android:id="@+id/tvWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Make sure your item receive only select the button!"
+        android:textColor="?android:attr/colorError"
+        app:layout_constraintBottom_toTopOf="@+id/btnReceive"
+        app:layout_constraintEnd_toEndOf="@+id/btnReceive"
+        app:layout_constraintStart_toStartOf="@+id/btnReceive" />
+
+    <Button
+        android:id="@+id/btnReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Item received"
+        android:fontFamily="@font/merienda_one"
+        android:background="@drawable/btn_common"
+        android:onClick="btnReceive_onClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

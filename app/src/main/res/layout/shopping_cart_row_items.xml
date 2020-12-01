@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_shoppingCart"
+    android:layout_marginBottom="8dp"
+    android:background="#FFC94E"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/tvCartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="product_name"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgShoppingCartItem"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCartName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCartName"
+        app:srcCompat="@drawable/corn" />
+
+    <TextView
+        android:id="@+id/tvCartItemNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="qty"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDecrease"
+        app:layout_constraintEnd_toStartOf="@+id/btnIncrease"
+        app:layout_constraintStart_toEndOf="@+id/btnDecrease"
+        app:layout_constraintTop_toTopOf="@+id/btnDecrease" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_minus"
+        app:layout_constraintEnd_toStartOf="@+id/btnIncrease"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnRemoveCart"
+        app:layout_constraintEnd_toEndOf="@+id/btnIncrease"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncrease" />
+
+    <Button
+        android:id="@+id/btnRemoveCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_remove_shopping_cart"
+        android:onClick="btnRemoveCart_onClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="RM"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCartPrice"
+        app:layout_constraintEnd_toStartOf="@+id/tvCartPrice"
+        app:layout_constraintTop_toTopOf="@+id/tvCartPrice" />
+
+</android.support.constraint.ConstraintLayout>
